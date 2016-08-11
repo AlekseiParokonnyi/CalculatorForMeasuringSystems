@@ -1,0 +1,287 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class MeasuringSystemsLengthTest
+{
+
+	@Test (expected = IllegalArgumentException.class)
+	public void testLengthSpan_Negetive()
+	{
+		MeasuringSystemsLength.lengthSpan(-5);
+	}
+
+	@Test
+	public void testLengthSpan_0()
+	{
+		double res = MeasuringSystemsLength.lengthSpan(0);
+		assertEquals(0, res, 0.00001);
+	}
+	
+	@Test
+	public void testLengthSpan_01()
+	{
+		double res = MeasuringSystemsLength.lengthSpan(0.1);
+		assertEquals(0.00562, res, 0.00001);
+	}
+	
+	@Test
+	public void testLengthSpan_1()
+	{
+		double res = MeasuringSystemsLength.lengthSpan(1);
+		assertEquals(0.05624, res, 0.00001);
+	}
+	
+	@Test
+	public void testLengthSpan_100()
+	{
+		double res = MeasuringSystemsLength.lengthSpan(100);
+		assertEquals(5.6243, res, 0.00001);
+	}
+	
+
+	@Test (expected = IllegalArgumentException.class)
+	public void testLengthInch_Negetive()
+	{
+		MeasuringSystemsLength.lengthInch(-5);
+	}
+
+	@Test
+	public void testLengthInch_0()
+	{
+		double res = MeasuringSystemsLength.lengthInch(0);
+		assertEquals(0, res, 0.00001);
+	}
+	
+	@Test
+	public void testLengthInch_01()
+	{
+		double res = MeasuringSystemsLength.lengthInch(0.1);
+		assertEquals(0.03937, res, 0.00001);
+	}
+	
+	@Test
+	public void testLengthInch_1()
+	{
+		double res = MeasuringSystemsLength.lengthInch(1);
+		assertEquals(0.3937, res, 0.00001);
+	}
+	
+	@Test
+	public void testLengthInch_100()
+	{
+		double res = MeasuringSystemsLength.lengthInch(100);
+		assertEquals(39.37008, res, 0.00001);
+	}
+
+
+	@Test (expected = IllegalArgumentException.class)
+	public void testLengthLink_Negetive()
+	{
+		MeasuringSystemsLength.lengthLink(-5);
+	}
+
+	@Test
+	public void testLengthLink_0()
+	{
+		double res = MeasuringSystemsLength.lengthLink(0);
+		assertEquals(0, res, 0.00001);
+	}
+	
+	@Test
+	public void testLengthLink_01()
+	{
+		double res = MeasuringSystemsLength.lengthLink(0.1);
+		assertEquals(0.00497, res, 0.00001);
+	}
+	
+	@Test
+	public void testLengthLink_1()
+	{
+		double res = MeasuringSystemsLength.lengthLink(1);
+		assertEquals(0.04971, res, 0.00001);
+	}
+	
+	@Test
+	public void testLengthLink_100()
+	{
+		double res = MeasuringSystemsLength.lengthLink(100);
+		assertEquals(4.97097, res, 0.00001);
+	}
+	
+	
+	@Test (expected = IllegalArgumentException.class)
+	public void testLengthFoot_Negetive()
+	{
+		MeasuringSystemsLength.lengthFoot(-5);
+	}
+
+	@Test
+	public void testLengthFoot_0()
+	{
+		double res = MeasuringSystemsLength.lengthFoot(0);
+		assertEquals(0, res, 0.00001);
+	}
+	
+	@Test
+	public void testLengthFoot_01()
+	{
+		double res = MeasuringSystemsLength.lengthFoot(0.1);
+		assertEquals(0.00328, res, 0.00001);
+	}
+	
+	@Test
+	public void testLengthFoot_1()
+	{
+		double res = MeasuringSystemsLength.lengthFoot(1);
+		assertEquals(0.03281, res, 0.00001);
+	}
+	
+	@Test
+	public void testLengthFoot_100()
+	{
+		double res = MeasuringSystemsLength.lengthFoot(100);
+		assertEquals(3.28084, res, 0.00001);
+	}
+	
+	
+	@Test (expected = IllegalArgumentException.class)
+	public void testLengthYard_Negetive()
+	{
+		MeasuringSystemsLength.lengthYard(-5);
+	}
+
+	@Test
+	public void testLengthYard_0()
+	{
+		double res = MeasuringSystemsLength.lengthYard(0);
+		assertEquals(0, res, 0.00001);
+	}
+	
+	@Test
+	public void testLengthYard_01()
+	{
+		double res = MeasuringSystemsLength.lengthYard(0.1);
+		assertEquals(0.00109, res, 0.00001);
+	}
+	
+	@Test
+	public void testLengthYard_1()
+	{
+		double res = MeasuringSystemsLength.lengthYard(1);
+		assertEquals(0.01094, res, 0.00001);
+	}
+	
+	@Test
+	public void testLengthYard_100()
+	{
+		double res = MeasuringSystemsLength.lengthYard(100);
+		assertEquals(1.09361, res, 0.00001);
+	}
+	
+	
+	@Test (expected = IllegalArgumentException.class)
+	public void testLengthStopa_Negetive()
+	{
+		MeasuringSystemsLength.lengthStopa(-5);
+	}
+
+	@Test
+	public void testLengthStopa_0()
+	{
+		double res = MeasuringSystemsLength.lengthStopa(0);
+		assertEquals(0, res, 0.00001);
+	}
+	
+	@Test
+	public void testLengthStopa_01()
+	{
+		double res = MeasuringSystemsLength.lengthStopa(0.1);
+		assertEquals(0.00281, res, 0.00001);
+	}
+	
+	@Test
+	public void testLengthStopa_1()
+	{
+		double res = MeasuringSystemsLength.lengthStopa(1);
+		assertEquals(0.0281215, res, 0.00001);
+	}
+	
+	@Test
+	public void testLengthStopa_100()
+	{
+		double res = MeasuringSystemsLength.lengthStopa(100);
+		assertEquals(2.81215, res, 0.00001);
+	}
+	
+	
+	@Test (expected = IllegalArgumentException.class)
+	public void testLengthLokot_Negetive()
+	{
+		MeasuringSystemsLength.lengthLokot(-5);
+	}
+
+	@Test
+	public void testLengthLokot_0()
+	{
+		double res = MeasuringSystemsLength.lengthLokot(0);
+		assertEquals(0, res, 0.00001);
+	}
+	
+	@Test
+	public void testLengthLokot_01()
+	{
+		double res = MeasuringSystemsLength.lengthLokot(0.1);
+		assertEquals(0.00187, res, 0.00001);
+	}
+	
+	@Test
+	public void testLengthLokot_1()
+	{
+		double res = MeasuringSystemsLength.lengthLokot(1);
+		assertEquals(0.01875, res, 0.00001);
+	}
+	
+	@Test
+	public void testLengthLokot_100()
+	{
+		double res = MeasuringSystemsLength.lengthLokot(100);
+		assertEquals(1.87477, res, 0.00001);
+	}
+	
+	
+	@Test (expected = IllegalArgumentException.class)
+	public void testLengthArshin_Negetive()
+	{
+		MeasuringSystemsLength.lengthArshin(-5);
+	}
+
+	@Test
+	public void testLengthArshin_0()
+	{
+		double res = MeasuringSystemsLength.lengthArshin(0);
+		assertEquals(0, res, 0.00001);
+	}
+	
+	@Test
+	public void testLengthArshin_01()
+	{
+		double res = MeasuringSystemsLength.lengthArshin(0.1);
+		assertEquals(0.00141, res, 0.00001);
+	}
+	
+	@Test
+	public void testLengthArshin_1()
+	{
+		double res = MeasuringSystemsLength.lengthArshin(1);
+		assertEquals(0.01406, res, 0.00001);
+	}
+	
+	@Test
+	public void testLengthArshin_100()
+	{
+		double res = MeasuringSystemsLength.lengthArshin(100);
+		assertEquals(1.40607, res, 0.00001);
+	}
+}
