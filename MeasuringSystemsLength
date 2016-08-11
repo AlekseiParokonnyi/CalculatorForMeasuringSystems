@@ -1,0 +1,83 @@
+
+public class MeasuringSystemsLength
+{
+	public static double lengthSpan(double length)
+	{
+		if (length < 0)
+			throw new IllegalArgumentException();
+		
+		length /= 17.78;
+		
+		return length;
+	}
+	
+	public static double lengthInch(double length)
+	{
+		if (length < 0)
+			throw new IllegalArgumentException();
+		
+		length /= 2.54;
+		
+		return length;
+	}
+	
+	public static double lengthLink(double length)
+	{
+		if (length < 0)
+			throw new IllegalArgumentException();
+		
+		length /= 20.1168;
+		
+		return length;
+	}
+	
+	public static double lengthFoot(double length)
+	{
+		if (length < 0)
+			throw new IllegalArgumentException();
+		
+		length /= 30.48;
+		
+		return length;
+	}
+	
+	public static double lengthYard(double length)
+	{
+		if (length < 0)
+			throw new IllegalArgumentException();
+		
+		length /= 91.44;
+		
+		return length;
+	}
+	
+	public static double lengthStopa(double length)
+	{
+		if (length < 0)
+			throw new IllegalArgumentException();
+		
+		length /= 35.56;
+		
+		return length;
+	}
+	
+	public static double lengthLokot(double length)
+	{
+		if (length < 0)
+			throw new IllegalArgumentException();
+		
+		length /= 53.34;
+		
+		return length;
+	}
+	
+	public static double lengthArshin(double length)
+	{
+		if (length < 0)
+			throw new IllegalArgumentException();
+		
+		length /= 71.12;
+		
+		return length;
+	}
+}
