@@ -1,0 +1,287 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class MeasurringSystemsVolumeTest
+{
+
+	@Test (expected = IllegalArgumentException.class)
+	public void testVolumeLiter_Negetive()
+	{
+		MeasurringSystemsVolume.volumeLiter(-5);
+	}
+	
+	@Test
+	public void testVolumeLiter_0()
+	{
+		double res = MeasurringSystemsVolume.volumeLiter(0);
+		assertEquals(0, res, 0.001);
+	}
+	
+	@Test
+	public void testVolumeLiter_01()
+	{
+		double res = MeasurringSystemsVolume.volumeLiter(0.1);
+		assertEquals(100, res, 0.001);
+	}
+	
+	@Test
+	public void testVolumeLiter_1()
+	{
+		double res = MeasurringSystemsVolume.volumeLiter(1);
+		assertEquals(1000, res, 0.001);
+	}
+
+	@Test
+	public void testVolumeLiter_100()
+	{
+		double res = MeasurringSystemsVolume.volumeLiter(100);
+		assertEquals(100000, res, 0.001);
+	}
+	
+
+	@Test (expected = IllegalArgumentException.class)
+	public void testVolumeAam_Negetive()
+	{
+		MeasurringSystemsVolume.volumeAam(-5);
+	}
+	
+	@Test
+	public void testVolumeAam_0()
+	{
+		double res = MeasurringSystemsVolume.volumeAam(0);
+		assertEquals(0, res, 0.001);
+	}
+	
+	@Test
+	public void testVolumeAam_01()
+	{
+		double res = MeasurringSystemsVolume.volumeAam(0.1);
+		assertEquals(0.644, res, 0.001);
+	}
+	
+	@Test
+	public void testVolumeAam_1()
+	{
+		double res = MeasurringSystemsVolume.volumeAam(1);
+		assertEquals(6.442, res, 0.001);
+	}
+
+	@Test
+	public void testVolumeAam_100()
+	{
+		double res = MeasurringSystemsVolume.volumeAam(100);
+		assertEquals(644.23, res, 0.001);
+	}
+	
+	
+	@Test (expected = IllegalArgumentException.class)
+	public void testVolumeBarrel_Negetive()
+	{
+		MeasurringSystemsVolume.volumeBarrel(-5);
+	}
+	
+	@Test
+	public void testVolumeBarrel_0()
+	{
+		double res = MeasurringSystemsVolume.volumeBarrel(0);
+		assertEquals(0, res, 0.001);
+	}
+	
+	@Test
+	public void testVolumeBarrel_01()
+	{
+		double res = MeasurringSystemsVolume.volumeBarrel(0.1);
+		assertEquals(0.629, res, 0.001);
+	}
+	
+	@Test
+	public void testVolumeBarrel_1()
+	{
+		double res = MeasurringSystemsVolume.volumeBarrel(1);
+		assertEquals(6.290, res, 0.001);
+	}
+
+	@Test
+	public void testVolumeBarrel_100()
+	{
+		double res = MeasurringSystemsVolume.volumeBarrel(100);
+		assertEquals(628.978, res, 0.001);
+	}
+	
+	
+	@Test (expected = IllegalArgumentException.class)
+	public void testVolumeGallon_Negetive()
+	{
+		MeasurringSystemsVolume.volumeGallon(-5);
+	}
+	
+	@Test
+	public void testVolumeGallon_0()
+	{
+		double res = MeasurringSystemsVolume.volumeGallon(0);
+		assertEquals(0, res, 0.001);
+	}
+	
+	@Test
+	public void testVolumeGallon_01()
+	{
+		double res = MeasurringSystemsVolume.volumeGallon(0.1);
+		assertEquals(26.417, res, 0.001);
+	}
+	
+	@Test
+	public void testVolumeGallon_1()
+	{
+		double res = MeasurringSystemsVolume.volumeGallon(1);
+		assertEquals(264.172, res, 0.001);
+	}
+
+	@Test
+	public void testVolumeGallon_100()
+	{
+		double res = MeasurringSystemsVolume.volumeGallon(100);
+		assertEquals(26417.205, res, 0.001);
+	}
+	
+	
+	@Test (expected = IllegalArgumentException.class)
+	public void testVolumePint_Negetive()
+	{
+		MeasurringSystemsVolume.volumePint(-5);
+	}
+	
+	@Test
+	public void testVolumePint_0()
+	{
+		double res = MeasurringSystemsVolume.volumePint(0);
+		assertEquals(0, res, 0.001);
+	}
+	
+	@Test
+	public void testVolumePint_01()
+	{
+		double res = MeasurringSystemsVolume.volumePint(0.1);
+		assertEquals(211.338, res, 0.001);
+	}
+	
+	@Test
+	public void testVolumePint_1()
+	{
+		double res = MeasurringSystemsVolume.volumePint(1);
+		assertEquals(2113.376, res, 0.001);
+	}
+
+	@Test
+	public void testVolumePint_100()
+	{
+		double res = MeasurringSystemsVolume.volumePint(100);
+		assertEquals(211337.642, res, 0.001);
+	}
+	
+	
+	@Test (expected = IllegalArgumentException.class)
+	public void testVolumeAnker_Negetive()
+	{
+		MeasurringSystemsVolume.volumeAnker(-5);
+	}
+	
+	@Test
+	public void testVolumeAnker_0()
+	{
+		double res = MeasurringSystemsVolume.volumeAnker(0);
+		assertEquals(0, res, 0.001);
+	}
+	
+	@Test
+	public void testVolumeAnker_01()
+	{
+		double res = MeasurringSystemsVolume.volumeAnker(0.1);
+		assertEquals(2.201, res, 0.001);
+	}
+	
+	@Test
+	public void testVolumeAnker_1()
+	{
+		double res = MeasurringSystemsVolume.volumeAnker(1);
+		assertEquals(22.009, res, 0.001);
+	}
+
+	@Test
+	public void testVolumeAnker_100()
+	{
+		double res = MeasurringSystemsVolume.volumeAnker(100);
+		assertEquals(2200.907, res, 0.001);
+	}
+	
+	
+	@Test (expected = IllegalArgumentException.class)
+	public void testVolumeQuart_Negetive()
+	{
+		MeasurringSystemsVolume.volumeQuart(-5);
+	}
+	
+	@Test
+	public void testVolumeQuart_0()
+	{
+		double res = MeasurringSystemsVolume.volumeQuart(0);
+		assertEquals(0, res, 0.001);
+	}
+	
+	@Test
+	public void testVolumeQuart_01()
+	{
+		double res = MeasurringSystemsVolume.volumeQuart(0.1);
+		assertEquals(105.669, res, 0.001);
+	}
+	
+	@Test
+	public void testVolumeQuart_1()
+	{
+		double res = MeasurringSystemsVolume.volumeQuart(1);
+		assertEquals(1056.688, res, 0.001);
+	}
+
+	@Test
+	public void testVolumeQuart_100()
+	{
+		double res = MeasurringSystemsVolume.volumeQuart(100);
+		assertEquals(105668.821, res, 0.001);
+	}
+	
+	
+	@Test (expected = IllegalArgumentException.class)
+	public void testVolumeKa_Negetive()
+	{
+		MeasurringSystemsVolume.volumeKa(-5);
+	}
+	
+	@Test
+	public void testVolumeKa_0()
+	{
+		double res = MeasurringSystemsVolume.volumeKa(0);
+		assertEquals(0, res, 0.001);
+	}
+	
+	@Test
+	public void testVolumeKa_01()
+	{
+		double res = MeasurringSystemsVolume.volumeKa(0.1);
+		assertEquals(119.048, res, 0.001);
+	}
+	
+	@Test
+	public void testVolumeKa_1()
+	{
+		double res = MeasurringSystemsVolume.volumeKa(1);
+		assertEquals(1190.476, res, 0.001);
+	}
+
+	@Test
+	public void testVolumeKa_100()
+	{
+		double res = MeasurringSystemsVolume.volumeKa(100);
+		assertEquals(119047.619, res, 0.001);
+	}
+}
