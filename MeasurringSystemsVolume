@@ -1,0 +1,84 @@
+
+public class MeasurringSystemsVolume
+{
+	public static double volumeLiter(double volume)
+	{
+		if (volume < 0)
+			throw new IllegalArgumentException();
+		
+		volume *= 1000;
+		
+		return volume;
+	}
+	
+	public static double volumeAam(double volume)
+	{
+		if (volume < 0)
+			throw new IllegalArgumentException();
+		
+		volume /= 0.155224;
+		
+		return volume;
+	}
+	
+	public static double volumeBarrel(double volume)
+	{
+		if (volume < 0)
+			throw new IllegalArgumentException();
+		
+		volume /= 0.158988;
+		
+		return volume;
+	}
+	
+	public static double volumeGallon(double volume)
+	{
+		if (volume < 0)
+			throw new IllegalArgumentException();
+		
+		volume /= 0.00378541178;
+		
+		return volume;
+	}
+	
+	public static double volumePint(double volume)
+	{
+		if (volume < 0)
+			throw new IllegalArgumentException();
+		
+		volume /= 0.000473176473;
+		
+		return volume;
+	}
+	
+	public static double volumeAnker(double volume)
+	{
+		if (volume < 0)
+			throw new IllegalArgumentException();
+		
+		volume /= 0.04543582;
+		
+		return volume;
+	}
+	
+	
+	public static double volumeQuart(double volume)
+	{
+		if (volume < 0)
+			throw new IllegalArgumentException();
+		
+		volume /= 0.00094635295;
+		
+		return volume;
+	}
+	
+	public static double volumeKa(double volume)
+	{
+		if (volume < 0)
+			throw new IllegalArgumentException();
+		
+		volume /= 0.00084;
+		
+		return volume;
+	}
+}
