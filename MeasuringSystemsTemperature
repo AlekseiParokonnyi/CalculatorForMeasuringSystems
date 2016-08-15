@@ -1,0 +1,59 @@
+
+public class MeasuringSystemsTemperature
+{
+	public static double tempKelvin(double temperature)
+	{
+		temperature += 273.15;
+		
+		return temperature;
+	}
+	
+	public static double tempFahrenheit(double temperature)
+	{
+		temperature = temperature * 9 / 5  + 32;
+		
+		return temperature;
+	}
+	
+	public static double tempRankin(double temperature)
+	{
+		temperature = (temperature + 273.15) * 9 / 5;
+		
+		return temperature;
+	}
+	
+	public static double tempReaumur(double temperature)
+	{
+		temperature = temperature * 4 / 5;
+		
+		return temperature;
+	}
+	
+	public static double tempDelisle(double temperature)
+	{
+		temperature = (100 - temperature) * 3 / 2;
+		
+		return temperature;
+	}
+	
+	public static double tempNewton(double temperature)
+	{
+		temperature = temperature * 33 / 100;
+		
+		return temperature;
+	}
+		
+	public static double tempRoemer(double temperature)
+	{
+		temperature = temperature * 21 / 40 + 7.5;
+		
+		return temperature;
+	}
+	
+	public static double tempHooke(double temperature)
+	{
+		temperature = temperature *  5 / 12;
+		
+		return temperature;
+	}
+}
