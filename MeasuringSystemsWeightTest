@@ -1,0 +1,287 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class MeasuringSystemsTestWeight
+{
+
+	@Test (expected = IllegalArgumentException.class)
+	public void testWeightPood_Negetive()
+	{
+		MeasuringSystems.weightPood(-5);
+	}
+
+	@Test
+	public void testWeightPood_0()
+	{
+		double res = MeasuringSystems.weightPood(0);
+		assertEquals(0, res, 0.00001);
+	}
+	
+	@Test
+	public void testWeightPood_1()
+	{
+		double res = MeasuringSystems.weightPood(1);
+		assertEquals(0.06105, res, 0.00001);
+	}
+	
+	@Test
+	public void testWeightPood_10()
+	{
+		double res = MeasuringSystems.weightPood(10);
+		assertEquals(0.61048, res, 0.00001);
+	}
+	
+	@Test
+	public void testWeightPood_100()
+	{
+		double res = MeasuringSystems.weightPood(100);
+		assertEquals(6.10483, res, 0.00001);
+	}
+	
+	
+	@Test (expected = IllegalArgumentException.class)
+	public void testWeightStone_Negetive()
+	{
+		MeasuringSystems.weightStone(-5);
+	}
+
+	@Test
+	public void testWeightStone_0()
+	{
+		double res = MeasuringSystems.weightStone(0);
+		assertEquals(0, res, 0.00001);
+	}
+	
+	@Test
+	public void testWeightStone_1()
+	{
+		double res = MeasuringSystems.weightStone(1);
+		assertEquals(0.15747, res, 0.00001);
+	}
+	
+	@Test
+	public void testWeightStone_10()
+	{
+		double res = MeasuringSystems.weightStone(10);
+		assertEquals(1.57473, res, 0.00001);
+	}
+	
+	@Test
+	public void testWeightStone_100()
+	{
+		double res = MeasuringSystems.weightStone(100);
+		assertEquals(15.7473, res, 0.00001);
+	}
+	
+	
+	@Test (expected = IllegalArgumentException.class)
+	public void testWeightPound_Negetive()
+	{
+		MeasuringSystems.weightStone(-5);
+	}
+
+	@Test
+	public void testWeightPound_0()
+	{
+		double res = MeasuringSystems.weightPound(0);
+		assertEquals(0, res, 0.00001);
+	}
+	
+	@Test
+	public void testWeightPound_1()
+	{
+		double res = MeasuringSystems.weightPound(1);
+		assertEquals(2.20462, res, 0.00001);
+	}
+	
+	@Test
+	public void testWeightPound_10()
+	{
+		double res = MeasuringSystems.weightPound(10);
+		assertEquals(22.04623, res, 0.00001);
+	}
+	
+	@Test
+	public void testWeightPound_100()
+	{
+		double res = MeasuringSystems.weightPound(100);
+		assertEquals(220.46226, res, 0.00001);
+	}
+	
+	
+	@Test (expected = IllegalArgumentException.class)
+	public void testWeightOunce_Negetive()
+	{
+		MeasuringSystems.weightStone(-5);
+	}
+
+	@Test
+	public void testWeightOunce_0()
+	{
+		double res = MeasuringSystems.weightOunce(0);
+		assertEquals(0, res, 0.00001);
+	}
+	
+	@Test
+	public void testWeightOunce_1()
+	{
+		double res = MeasuringSystems.weightOunce(1);
+		assertEquals(35.27396, res, 0.00001);
+	}
+	
+	@Test
+	public void testWeightOunce_10()
+	{
+		double res = MeasuringSystems.weightOunce(10);
+		assertEquals(352.73962, res, 0.00001);
+	}
+	
+	@Test
+	public void testWeightOunce_100()
+	{
+		double res = MeasuringSystems.weightOunce(100);
+		assertEquals(3527.39619, res, 0.00001);
+	}
+	
+	
+	@Test (expected = IllegalArgumentException.class)
+	public void testWeightDrachma_Negetive()
+	{
+		MeasuringSystems.weightDrachma(-5);
+	}
+
+	@Test
+	public void testWeightDrachma_0()
+	{
+		double res = MeasuringSystems.weightDrachma(0);
+		assertEquals(0, res, 0.00001);
+	}
+	
+	@Test
+	public void testWeightDrachma_1()
+	{
+		double res = MeasuringSystems.weightDrachma(1);
+		assertEquals(564.38339, res, 0.00001);
+	}
+	
+	@Test
+	public void testWeightDrachma_10()
+	{
+		double res = MeasuringSystems.weightDrachma(10);
+		assertEquals(5643.83391, res, 0.00001);
+	}
+	
+	@Test
+	public void testWeightDrachma_100()
+	{
+		double res = MeasuringSystems.weightDrachma(100);
+		assertEquals(56438.33912, res, 0.00001);
+	}
+	
+	
+	@Test (expected = IllegalArgumentException.class)
+	public void testWeightCentner_Negetive()
+	{
+		MeasuringSystems.weightCentner(-5);
+	}
+
+	@Test
+	public void testWeightCentner_0()
+	{
+		double res = MeasuringSystems.weightCentner(0);
+		assertEquals(0, res, 0.00001);
+	}
+	
+	@Test
+	public void testWeightCentner_1()
+	{
+		double res = MeasuringSystems.weightCentner(1);
+		assertEquals(0.01, res, 0.00001);
+	}
+	
+	@Test
+	public void testWeightCentner_10()
+	{
+		double res = MeasuringSystems.weightCentner(10);
+		assertEquals(0.1, res, 0.00001);
+	}
+	
+	@Test
+	public void testWeightCentner_100()
+	{
+		double res = MeasuringSystems.weightCentner(100);
+		assertEquals(1, res, 0.00001);
+	}
+	
+	
+	@Test (expected = IllegalArgumentException.class)
+	public void testWeightBerkovets_Negetive()
+	{
+		MeasuringSystems.weightBerkovets(-5);
+	}
+
+	@Test
+	public void testWeightBerkovets_0()
+	{
+		double res = MeasuringSystems.weightBerkovets(0);
+		assertEquals(0, res, 0.00001);
+	}
+	
+	@Test
+	public void testWeightBerkovets_1()
+	{
+		double res = MeasuringSystems.weightBerkovets(1);
+		assertEquals(0.0061, res, 0.00001);
+	}
+	
+	@Test
+	public void testWeightBerkovets_10()
+	{
+		double res = MeasuringSystems.weightBerkovets(10);
+		assertEquals(0.06098, res, 0.00001);
+	}
+	
+	@Test
+	public void testWeightBerkovets_100()
+	{
+		double res = MeasuringSystems.weightBerkovets(100);
+		assertEquals(0.60976, res, 0.00001);
+	}
+	
+	
+	@Test (expected = IllegalArgumentException.class)
+	public void testWeightTod_Negetive()
+	{
+		MeasuringSystems.weightTod(-5);
+	}
+
+	@Test
+	public void testWeightTod_0()
+	{
+		double res = MeasuringSystems.weightTod(0);
+		assertEquals(0, res, 0.00001);
+	}
+	
+	@Test
+	public void testWeightTod_1()
+	{
+		double res = MeasuringSystems.weightTod(1);
+		assertEquals(0.18372, res, 0.00001);
+	}
+	
+	@Test
+	public void testWeightTod_10()
+	{
+		double res = MeasuringSystems.weightTod(10);
+		assertEquals(1.83719, res, 0.00001);
+	}
+	
+	@Test
+	public void testWeightTod_100()
+	{
+		double res = MeasuringSystems.weightTod(100);
+		assertEquals(18.37186, res, 0.00001);
+	}
+}
