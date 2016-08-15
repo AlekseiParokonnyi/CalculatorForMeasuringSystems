@@ -1,0 +1,182 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class MeasuringSystemsTemperatureTest
+{
+	@Test
+	public void testTempKelvin_NegativeV()
+	{
+		double res = MeasuringSystemsTemperature.tempKelvin(-20);
+		assertEquals(253.15, res, 0.001);
+	}
+
+	@Test
+	public void testTempKelvin_0()
+	{
+		double res = MeasuringSystemsTemperature.tempKelvin(0);
+		assertEquals(273.15, res, 0.001);
+	}
+	
+	@Test
+	public void testTempKelvin_10()
+	{
+		double res = MeasuringSystemsTemperature.tempKelvin(10);
+		assertEquals(283.15, res, 0.001);
+	}
+	
+	
+	@Test
+	public void testTempFahrenheit_NegativeV()
+	{
+		double res = MeasuringSystemsTemperature.tempFahrenheit(-20);
+		assertEquals(-4, res, 0.001);
+	}
+
+	@Test
+	public void testTempFahrenheit_0()
+	{
+		double res = MeasuringSystemsTemperature.tempFahrenheit(0);
+		assertEquals(32, res, 0.001);
+	}
+	
+	@Test
+	public void testTempFahrenheit_10()
+	{
+		double res = MeasuringSystemsTemperature.tempFahrenheit(10);
+		assertEquals(50, res, 0.001);
+	}
+	
+	
+	@Test
+	public void testTempRankin_NegativeV()
+	{
+		double res = MeasuringSystemsTemperature.tempRankin(-20);
+		assertEquals(455.67, res, 0.001);
+	}
+
+	@Test
+	public void testTempRankin_0()
+	{
+		double res = MeasuringSystemsTemperature.tempRankin(0);
+		assertEquals(491.67, res, 0.001);
+	}
+	
+	@Test
+	public void testTempRankin_10()
+	{
+		double res = MeasuringSystemsTemperature.tempRankin(10);
+		assertEquals(509.67, res, 0.001);
+	}
+	
+	
+	@Test
+	public void testTempReaumur_NegativeV()
+	{
+		double res = MeasuringSystemsTemperature.tempReaumur(-20);
+		assertEquals(-16, res, 0.001);
+	}
+
+	@Test
+	public void testTempReaumur_0()
+	{
+		double res = MeasuringSystemsTemperature.tempReaumur(0);
+		assertEquals(0, res, 0.001);
+	}
+	
+	@Test
+	public void testTempReaumur_10()
+	{
+		double res = MeasuringSystemsTemperature.tempReaumur(10);
+		assertEquals(8, res, 0.001);
+	}
+	
+	
+	@Test
+	public void testTempDelisle_NegativeV()
+	{
+		double res = MeasuringSystemsTemperature.tempDelisle(-20);
+		assertEquals(180, res, 0.001);
+	}
+
+	@Test
+	public void testTempDelisle_0()
+	{
+		double res = MeasuringSystemsTemperature.tempDelisle(0);
+		assertEquals(150, res, 0.001);
+	}
+	
+	@Test
+	public void testTempDelisle_10()
+	{
+		double res = MeasuringSystemsTemperature.tempDelisle(10);
+		assertEquals(135, res, 0.001);
+	}
+	
+	
+	@Test
+	public void testTempNewton_NegativeV()
+	{
+		double res = MeasuringSystemsTemperature.tempNewton(-20);
+		assertEquals(-6.6, res, 0.001);
+	}
+
+	@Test
+	public void testTempNewton_0()
+	{
+		double res = MeasuringSystemsTemperature.tempNewton(0);
+		assertEquals(0, res, 0.001);
+	}
+	
+	@Test
+	public void testTempNewton_10()
+	{
+		double res = MeasuringSystemsTemperature.tempNewton(10);
+		assertEquals(3.3, res, 0.001);
+	}
+	
+	
+	@Test
+	public void testTempRoemer_NegativeV()
+	{
+		double res = MeasuringSystemsTemperature.tempRoemer(-20);
+		assertEquals(-3, res, 0.001);
+	}
+
+	@Test
+	public void testTempRoemer_0()
+	{
+		double res = MeasuringSystemsTemperature.tempRoemer(0);
+		assertEquals(7.5, res, 0.001);
+	}
+	
+	@Test
+	public void testTempRoemer_10()
+	{
+		double res = MeasuringSystemsTemperature.tempRoemer(10);
+		assertEquals(12.75, res, 0.001);
+	}
+	
+	
+	@Test
+	public void testTempHooke_NegativeV()
+	{
+		double res = MeasuringSystemsTemperature.tempHooke(-20);
+		assertEquals(-8.333, res, 0.001);
+	}
+
+	@Test
+	public void testTempHooke_0()
+	{
+		double res = MeasuringSystemsTemperature.tempHooke(0);
+		assertEquals(0, res, 0.001);
+	}
+	
+	@Test
+	public void testTempHooke_10()
+	{
+		double res = MeasuringSystemsTemperature.tempHooke(10);
+		assertEquals(4.166, res, 0.001);
+	}
+}
