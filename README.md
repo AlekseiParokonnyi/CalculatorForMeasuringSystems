@@ -1,2 +1,2 @@
 # CalculatorForMeasuringSystems
-This App contains methods for calcucating units of length, volume, temperature with JUnit test's
+This App contains methods for calcucating units of length, weight, volume, temperature with JUnit tests
