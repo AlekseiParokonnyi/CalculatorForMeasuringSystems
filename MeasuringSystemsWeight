@@ -1,0 +1,83 @@
+
+public class MeasuringSystems
+{
+	public static double weightPood(double weight)
+	{
+		if (weight < 0)
+			throw new IllegalArgumentException();
+		
+		weight /= 16.3804815;
+		
+		return weight;
+	}
+	
+	public static double weightStone(double weight)
+	{
+		if (weight < 0)
+			throw new IllegalArgumentException();
+		
+		weight /=  6.35029318;
+		
+		return weight;
+	}
+	
+	public static double weightPound(double weight)
+	{
+		if (weight < 0)
+			throw new IllegalArgumentException();
+		
+		weight /= (453.59237 / 1000);
+		
+		return weight;
+	}
+	
+	public static double weightOunce(double weight)
+	{
+		if (weight < 0)
+			throw new IllegalArgumentException();
+		
+		weight /= (28.349523125 / 1000);
+		
+		return weight;
+	}
+	
+	public static double weightDrachma(double weight)
+	{
+		if (weight < 0)
+			throw new IllegalArgumentException();
+		
+		weight /= (1.7718451953125 / 1000);
+		
+		return weight;
+	}
+	
+	public static double weightCentner(double weight)
+	{
+		if (weight < 0)
+			throw new IllegalArgumentException();
+		
+		weight /= 100;
+		
+		return weight;
+	}
+	
+	public static double weightBerkovets(double weight)
+	{
+		if (weight < 0)
+			throw new IllegalArgumentException();
+		
+		weight /= 164;
+		
+		return weight;
+	}
+	
+	public static double weightTod(double weight)
+	{
+		if (weight < 0)
+			throw new IllegalArgumentException();
+		
+		weight /= 5.44310844;
+		
+		return weight;
+	}
+}
